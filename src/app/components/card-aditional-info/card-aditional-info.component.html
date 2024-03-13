@@ -1,0 +1,31 @@
+<div class="card border-0 shadow rounded-2">
+  <div class="card-body p-4">
+    <header class="row d-flex justify-content-between">
+      <div class="col-md-6">
+        <h5 class="fs-5 fw-bold m-0">{{ infoCardAditional.title }}</h5>
+        <h6 class="fs-6 fw-bold">Categoría: {{ infoCardAditional.category }}</h6>
+      </div>
+      <div class="col-md-4 text-end">
+        <span class="text-decoration-underline" style="color: #00C83C; cursor: pointer;">Revisar objetivo</span>
+      </div>
+    </header>
+    <section class="row d-flex justify-content-between mt-3 g-1">
+      <div class="col-md-4 col-sm-12 text-center d-flex flex-column">
+        <span class="fs-6">En esta fecha:</span>
+        <div class="fs-6 fw-bold mt-1 py-1 w-75 rounded mx-auto" style="background: #A5D7E1;">{{ infoCardAditional.date }}
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 text-center">
+        <span class="fs-6">Lograrás:</span>
+        <div class="fs-6 fw-bold mt-1 py-1 w-75 rounded mx-auto" style="background: #FECD72;">{{
+          infoCardAditional.achievements | currency }}</div>
+      </div>
+      <div class="col-md-4 col-sm-12 text-center">
+        <span class="fs-6">Ya cuentas con:</span>
+        <div class="fs-6 fw-bold mt-1 py-1 w-75 rounded mx-auto" style="background: #95DBB7;">{{
+          infoCardAditional.youAlreadyHave | currency }}</div>
+      </div>
+      <p class="text-decoration-underline fs-6 mt-5" style="color: #00C83C;">¡Asocia productos para monitorear su progreso!</p>
+    </section>
+  </div>
+</div>

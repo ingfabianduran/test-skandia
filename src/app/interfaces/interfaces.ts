@@ -13,11 +13,19 @@ export interface Alert {
 
 export interface Cards {
   listCard: ListCard[];
-}
+};
 
 export interface ListCard {
-  nameProduct:    string;
-  numberProduct:  string;
+  nameProduct: string;
+  numberProduct: string;
   balanceProduct: string;
   detaildProduct: string;
-}
+};
+
+export interface CardAditionalInfo {
+  title: string,
+  category: string,
+  date: string,
+  achievements: string,
+  youAlreadyHave: string
+};

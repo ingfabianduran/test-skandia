@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Cards } from '../../interfaces/interfaces';
+import { CardAditionalInfo, Cards } from '../../interfaces/interfaces';
 import { CardService } from "../../services/card.service";
 
 @Component({
@@ -9,6 +9,7 @@ import { CardService } from "../../services/card.service";
 })
 export class SkandiaComponent implements OnInit {
   cards: Cards = { listCard: [] };
+  infoCardAditional: CardAditionalInfo = { title: 'Conocer mi sobrino', category: 'Bienestar', date: 'Diciembre/2022', achievements: '6000000', youAlreadyHave: '0' };
 
   constructor(private cardService: CardService) { }
 

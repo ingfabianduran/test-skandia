@@ -14,6 +14,7 @@ import { SkandiaComponent } from './pages/skandia/skandia.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
+import { CardAditionalInfoComponent } from './components/card-aditional-info/card-aditional-info.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CardComponent } from './components/card/card.component';
     SkandiaComponent,
     NavbarComponent,
     FooterComponent,
-    CardComponent
+    CardComponent,
+    CardAditionalInfoComponent
   ],
   imports: [
     BrowserModule,
