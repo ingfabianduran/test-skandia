@@ -1,5 +1,5 @@
-<div class="card border-0 shadow rounded-2">
-  <div class="card-body p-4">
+<div class="card border-0 shadow rounded-2 position-relative">
+  <div class="card-body p-sm-4 p-md-5">
     <header class="row d-flex justify-content-between">
       <div class="col-md-6">
         <h5 class="fs-5 fw-bold m-0">{{ infoCardAditional.title }}</h5>
@@ -12,7 +12,8 @@
     <section class="row d-flex justify-content-between mt-3 g-1">
       <div class="col-md-4 col-sm-12 text-center d-flex flex-column">
         <span class="fs-6">En esta fecha:</span>
-        <div class="fs-6 fw-bold mt-1 py-1 w-75 rounded mx-auto" style="background: #A5D7E1;">{{ infoCardAditional.date }}
+        <div class="fs-6 fw-bold mt-1 py-1 w-75 rounded mx-auto" style="background: #A5D7E1;">{{ infoCardAditional.date
+          }}
         </div>
       </div>
       <div class="col-md-4 col-sm-12 text-center">
@@ -25,7 +26,10 @@
         <div class="fs-6 fw-bold mt-1 py-1 w-75 rounded mx-auto" style="background: #95DBB7;">{{
           infoCardAditional.youAlreadyHave | currency }}</div>
       </div>
-      <p class="text-decoration-underline fs-6 mt-5" style="color: #00C83C;">¡Asocia productos para monitorear su progreso!</p>
+      <p class="text-decoration-underline fs-6 mt-5" style="color: #00C83C;">¡Asocia productos para monitorear su
+        progreso!</p>
     </section>
   </div>
+  <img src="assets/images/mask_group.png" alt="Imagen card aditional"
+    class="img-fluid position-absolute h-auto bottom-0 end-0 d-none d-md-block">
 </div>
