@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" [fullScreen]="true">
+  <p style="color: white">Cargando...</p>
+</ngx-spinner>
+<div class="container">
+  <section class="w-100 p-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div *ngFor="let item of cards.listCard" class="col">
+        <app-card [card]="item"></app-card>
+      </div>
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>

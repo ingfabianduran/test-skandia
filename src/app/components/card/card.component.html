@@ -1,0 +1,16 @@
+<div class="card h-100 shadow border-0 border-bottom border-info border-5">
+  <div class="card-body">
+    <section class="my-3">
+      <h5 class="card-title fw-bold fs-5">{{ card.nameProduct }}</h5>
+      <h5 class="card-title fs-6"># {{ card.numberProduct }}</h5>
+    </section>
+    <mat-divider></mat-divider>
+    <section class="my-3">
+      <p class="card-text fw-bold fs-5">Ya cuentas con:</p>
+      <p class="fs-6 fw-bolder" style="color: #00C83C;">{{ card.balanceProduct | currency }}</p>
+    </section>
+    <section class="mt-5 p-4 text-center border rounded" style="background: #EDEDED; color: #3F3F3F;">
+      {{ card.detaildProduct }}
+    </section>
+  </div>
+</div>
