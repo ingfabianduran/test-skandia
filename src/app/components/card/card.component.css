@@ -1,0 +1,8 @@
+.custom-checkbox {
+    border-color: #00C83C;
+    transform: scale(1.2);
+}
+
+.custom-checkbox:checked {
+    background-color: #00C83C;
+}
