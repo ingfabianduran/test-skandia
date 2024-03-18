@@ -15,6 +15,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
 import { CardAditionalInfoComponent } from './components/card-aditional-info/card-aditional-info.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CardAditionalInfoComponent } from './components/card-aditional-info/car
     MaterialModule,
     NgxSpinnerModule.forRoot({ type: 'timer' }),
     HttpClientModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    SwiperModule
   ],
   providers: [
     {
