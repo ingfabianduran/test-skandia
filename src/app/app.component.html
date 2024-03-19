@@ -6,6 +6,4 @@
   <router-outlet></router-outlet>
   <app-footer></app-footer>
 </div>
-<p-sidebar [(visible)]="isVisible" [baseZIndex]="10000">
-  <h3>Left Sidebar</h3>
-</p-sidebar>
+<app-sidebar [isVisible]="isVisible" (hideSidebar)="onHideSidebar($event)"></app-sidebar>

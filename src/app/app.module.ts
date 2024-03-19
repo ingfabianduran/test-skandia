@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
 import { CardAditionalInfoComponent } from './components/card-aditional-info/card-aditional-info.component';
 import { SidebarModule } from 'primeng/sidebar';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SidebarModule } from 'primeng/sidebar';
     NavbarComponent,
     FooterComponent,
     CardComponent,
-    CardAditionalInfoComponent
+    CardAditionalInfoComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

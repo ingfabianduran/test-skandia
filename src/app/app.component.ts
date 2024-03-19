@@ -14,4 +14,13 @@ export class AppComponent {
   ngOnInit() {
     this.primengConfig.ripple = true;
   }
+  /**
+    * @author Fabian Duran
+    * @createdate 2024-19-03
+    * Metodo que setea la variable isVisible del sidebar.
+    * @param $event Evento emitido por el componente hijo. 
+  */
+  onHideSidebar($event: boolean): void {
+    this.isVisible = $event;
+  }
 }
