@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,6 +9,14 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class SidebarComponent implements OnInit {
   @Input() isVisible: boolean = false;
   @Output() hideSidebar: EventEmitter<boolean> = new EventEmitter<boolean>();
+  menus: MenuItem[] = [
+    { label: 'Inicio', icon: 'pi pi-home' },
+    { label: 'Contratos', icon: 'pi pi-file' },
+    { label: 'Acciones', icon: 'pi pi-wrench' },
+    { label: 'Objetivos', icon: 'pi pi-star' },
+    { label: 'Herramientas', icon: 'pi pi-dollar' },
+    { label: 'Servicio al cliente', icon: 'pi pi-comment' },
+  ];
 
   constructor() { }
 

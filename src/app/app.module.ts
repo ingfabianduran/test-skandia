@@ -17,6 +17,7 @@ import { CardComponent } from './components/card/card.component';
 import { CardAditionalInfoComponent } from './components/card-aditional-info/card-aditional-info.component';
 import { SidebarModule } from 'primeng/sidebar';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { MenuModule } from 'primeng/menu';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     NgxSpinnerModule.forRoot({ type: 'timer' }),
     HttpClientModule,
     ToastrModule.forRoot(),
-    SidebarModule
+    SidebarModule,
+    MenuModule
   ],
   providers: [
     {
