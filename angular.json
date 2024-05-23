@@ -28,6 +28,9 @@
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/ngx-spinner/animations/timer.css",
               "./node_modules/ngx-toastr/toastr.css",
+              "./node_modules/swiper/swiper-bundle.min.css",
+              "./node_modules/swiper/components/navigation/navigation.min.css",
+              "./node_modules/swiper/components/pagination/pagination.min.css",
               "./node_modules/primeng/resources/primeng.min.css",
               "./node_modules/primeng/resources/themes/lara-light-blue/theme.css",
               "./node_modules/primeicons/primeicons.css"

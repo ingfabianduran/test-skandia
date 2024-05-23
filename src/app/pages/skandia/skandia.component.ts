@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CardAditionalInfo, Cards } from '../../interfaces/interfaces';
 import { CardService } from "../../services/card.service";
+import SwiperCore, { Navigation, Pagination, SwiperOptions } from 'swiper';
+
+SwiperCore.use([Navigation, Pagination]);
 
 @Component({
   selector: 'app-skandia',
@@ -10,6 +13,18 @@ import { CardService } from "../../services/card.service";
 export class SkandiaComponent implements OnInit {
   cards: Cards = { listCard: [] };
   infoCardAditional: CardAditionalInfo = { title: 'Conocer mi sobrino', category: 'Bienestar', date: 'Diciembre/2022', achievements: '6000000', youAlreadyHave: '0' };
+  swipperConfig: SwiperOptions = {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: { clickable: true },
+    breakpoints: {
+      340: { slidesPerView: 1, spaceBetween: 10 },
+      768: { slidesPerView: 2, spaceBetween: 20, pagination: { el: '.swiper-pagination-hide' } },
+      1024: { slidesPerView: 3, spaceBetween: 30, pagination: { el: '.swiper-pagination-hide' } },
+    },
+  };
 
   constructor(private cardService: CardService) { }
 
