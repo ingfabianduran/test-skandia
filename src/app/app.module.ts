@@ -16,6 +16,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
 import { CardAditionalInfoComponent } from './components/card-aditional-info/card-aditional-info.component';
 import { SwiperModule } from 'swiper/angular';
+import { SidebarModule } from 'primeng/sidebar';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { MenuModule } from 'primeng/menu';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { SwiperModule } from 'swiper/angular';
     NavbarComponent,
     FooterComponent,
     CardComponent,
-    CardAditionalInfoComponent
+    CardAditionalInfoComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,9 @@ import { SwiperModule } from 'swiper/angular';
     NgxSpinnerModule.forRoot({ type: 'timer' }),
     HttpClientModule,
     ToastrModule.forRoot(),
-    SwiperModule
+    SwiperModule,
+    SidebarModule,
+    MenuModule
   ],
   providers: [
     {

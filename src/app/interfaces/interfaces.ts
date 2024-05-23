@@ -29,3 +29,8 @@ export interface CardAditionalInfo {
   achievements: string,
   youAlreadyHave: string
 };
+
+export interface MenuSidebar {
+  title: string,
+  icon: string
+};

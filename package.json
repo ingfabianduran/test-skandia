@@ -27,6 +27,8 @@
     "jspdf": "^2.5.1",
     "ngx-spinner": "^14.0.0",
     "ngx-toastr": "^15.2.2",
+    "primeicons": "^6.0.1",
+    "primeng": "^14.2.2",
     "rxjs": "~7.5.0",
     "sweetalert2": "^11.10.1",
     "swiper": "^6.8.4",
